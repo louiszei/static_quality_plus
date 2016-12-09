@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <CommunityCoreLibrary.ModHelperDef>
+    <defName>static_quality</defName>
+    <ModName>static_quality</ModName>
+    <minCCLVersion>0.14.1</minCCLVersion>
+	    <ModConfigurationMenus>
+            <li>
+                <label>Static Quality Plus A15.1</label>
+                <mcmClass>static_quality.MCM_static_quality</mcmClass>
+            </li>
+        </ModConfigurationMenus>
+
+		<SpecialInjectors>
+			<li>static_quality.DetourInjector</li>
+		</SpecialInjectors>
+  </CommunityCoreLibrary.ModHelperDef>
+
+</Defs>
