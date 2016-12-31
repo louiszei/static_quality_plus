@@ -17,7 +17,7 @@ namespace static_quality
             {
                 if (settings.learning_saturation_tweak == true)
                 {
-                    float val = this.level * 500 + 1000;
+                    float val = this.Level * 500 + 1000;
                     return (this.xpSinceMidnight > val);
                 }
                 else
@@ -38,7 +38,7 @@ namespace static_quality
 //            if (skill_degrading == false)
             if (settings.skill_switch == 0)  // vanilla
             {
-                switch (this.level)
+                switch (this.Level)
                 {
                     case 10:
                         this.Learn(-0.1f);
@@ -77,7 +77,7 @@ namespace static_quality
             }
             else if (settings.skill_switch == 1)  // halved
             {
-                switch (this.level)
+                switch (this.Level)
                 {
                     case 10:
                         this.Learn(-0.1f*0.5f);

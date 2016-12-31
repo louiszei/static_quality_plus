@@ -13,17 +13,19 @@ namespace static_quality       // Replace with yours.
 
         public void FixedUpdate()
         {
-            if (Current.ProgramState != ProgramState.MapPlaying)
+            if (Current.ProgramState != ProgramState.Playing)
             {
                 return;
             }
 
-
-            if (Find.Map.components.FindAll(c => c.GetType() == static_quality).Count == 0)
+            foreach (Map map in Find.Maps)
             {
-                Find.Map.components.Add((MapComponent)Activator.CreateInstance(static_quality));
+                if (map.components.FindAll(c => c.GetType() == static_quality).Count == 0)
+                {
+                    map.components.Add((MapComponent)Activator.CreateInstance(static_quality));
 
-                Log.Message("Static Quality :: Added to the map.");
+                    Log.Message("Static Quality :: Added to the map.");
+                }
             }
             Destroy(this);
         }

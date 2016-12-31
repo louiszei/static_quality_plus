@@ -24,13 +24,13 @@ namespace static_quality
                 {
                     "Level".Translate(),
                     " ",
-                    sk.level,
+                    sk.Level,
                     ": ",
                     sk.LevelDescriptor
                 }));
-                if (Current.ProgramState == ProgramState.MapPlaying)
+                if (Current.ProgramState == ProgramState.Playing)
                 {
-                    string text = (sk.level != 20) ? "ProgressToNextLevel".Translate() : "Experience".Translate();
+                    string text = (sk.Level != 20) ? "ProgressToNextLevel".Translate() : "Experience".Translate();
                     stringBuilder.AppendLine(string.Concat(new object[]
                     {
                         text,
@@ -82,7 +82,7 @@ namespace static_quality
                     int val;
                     if (settings.learning_saturation_tweak == true)
                     {
-                        val = sk.level * 500 + 1000;
+                        val = sk.Level * 500 + 1000;
                     } else
                     {
                         val = 4000;

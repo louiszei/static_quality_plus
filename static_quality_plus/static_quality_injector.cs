@@ -31,13 +31,19 @@ namespace static_quality
 
             MethodInfo m6a = typeof(Plant).GetMethod("get_Resting", BindingFlags.Instance | BindingFlags.NonPublic);
             MethodInfo m6b = typeof(_Plant).GetMethod("get__Resting", BindingFlags.Instance | BindingFlags.NonPublic);
-            
-/*
-            Log.Message(typeof(SkillRecord).GetField("pawn", BindingFlags.Instance | BindingFlags.NonPublic).ToString());
-            foreach (MethodInfo mx in typeof(static_quality_no_skill_degrading).GetMethods()) {
-                Log.Message(mx.ToString());
-            }
-*/
+
+            MethodInfo m7a = typeof(Dialog_Options).GetMethod("DoWindowContents", BindingFlags.Instance | BindingFlags.Public);
+            MethodInfo m7b = typeof(_Dialog_Options).GetMethod("DoWindowContents", BindingFlags.Instance | BindingFlags.Public);
+
+            MethodInfo m8a = typeof(Dialog_Options).GetMethod("PreClose", BindingFlags.Instance | BindingFlags.Public);
+            MethodInfo m8b = typeof(_Dialog_Options).GetMethod("PreClose", BindingFlags.Instance | BindingFlags.Public);
+
+            /*
+                        Log.Message(typeof(SkillRecord).GetField("pawn", BindingFlags.Instance | BindingFlags.NonPublic).ToString());
+                        foreach (MethodInfo mx in typeof(static_quality_no_skill_degrading).GetMethods()) {
+                            Log.Message(mx.ToString());
+                        }
+            */
 
             if (Detours.TryDetourFromTo(m1a, m1b))
             {
@@ -73,6 +79,20 @@ namespace static_quality
             {
                 Log.Message("static_quality_Injector: _Plant _Resting injected successfully!");
             } else {
+                success = false;
+            }
+            if (Detours.TryDetourFromTo(m7a, m7b))
+            {
+                Log.Message("static_quality_Injector: _Dialog_Options DoWindowContents injected successfully!");
+            } else {
+                success = false;
+            }
+            if (Detours.TryDetourFromTo(m8a, m8b))
+            {
+                Log.Message("static_quality_Injector: _Dialog_Options PreClose injected successfully!");
+            }
+            else
+            {
                 success = false;
             }
 

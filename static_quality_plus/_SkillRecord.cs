@@ -32,7 +32,7 @@ namespace static_quality
         {
             Pawn pawn = _this.GetPawn();
 
-            if (xp < 0f && _this.level == 0)
+            if (xp < 0f && _this.Level == 0)
             {
                 return;
             }
@@ -62,10 +62,10 @@ namespace static_quality
 
             if (_this.xpSinceLastLevel >= _this.XpRequiredForLevelUp)
             {
-                if (_this.level != 20)
+                if (_this.Level != 20)
                 {
                     _this.xpSinceLastLevel -= _this.XpRequiredForLevelUp;
-                    _this.level++;
+                    _this.Level++;
                     if (settings.passion_gain && (_this.passion != Passion.Major))
                     {
                         _CheckPassionIncrease(pawn, _this.def);
@@ -80,11 +80,11 @@ namespace static_quality
             {
                 if (settings.no_delevel == false)
                 {
-                    _this.level--;
+                    _this.Level--;
                     _this.xpSinceLastLevel += _this.XpRequiredForLevelUp;
-                    if (_this.level <= 0)
+                    if (_this.Level <= 0)
                     {
-                        _this.level = 0;
+                        _this.Level = 0;
                         _this.xpSinceLastLevel = 0f;
                     }
                 } else
@@ -100,7 +100,7 @@ namespace static_quality
             int mod;
             mod = rng.Next(1, 11);
             //Log.Message("prereq met " + mod.ToString() + " " + (pawn.skills.GetSkill(skilldef).level).ToString());
-            if (pawn.skills.GetSkill(skilldef).level > mod)
+            if (pawn.skills.GetSkill(skilldef).Level > mod)
             {
                 if (pawn.skills.GetSkill(skilldef).passion == Passion.None)
                 {
