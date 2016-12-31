@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MainTabDefs>
+
+  <MainTabDef>
+    <defName>Static_Quality</defName>
+    <label>Static Quality Cfg</label>
+    <description>Configure how Static Quality affects your game.</description>
+    <windowClass>static_quality.static_quality_Config_Tab</windowClass>
+    <order>251</order>
+  </MainTabDef>
+
+</MainTabDefs>

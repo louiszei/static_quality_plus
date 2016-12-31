@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Static Quality Plus A15.1.1</name>
+	<author>zlj</author>
+	<targetVersion>0.15.1284</targetVersion>
+	<description>
+Version A15.1.1
+
+Special thanks to Killface for the CCL stripping!
+
+My apologies for the late A15 update and for the SQ config menu being on the main menu bar, i'll look into fixing that (but time is a rather valuable commodity over here atm). ;)
+
+This mod allows you to tweak certain skill, passion and item quality settings (and now also completely unrelated stuff =p) :
+
+- modify item quality rolls
+- modify skill degradation severity
+- modify whether or not you can lose skill levels due to degradation
+- change xp modifier values from passions
+- modify daily xp cap (this function seems bugged atm)
+- allows pawns to gain passions
+- caps the amount of passions a pawn can have
+- enables 24h plant growth
+
+
+Static Quality+ (should probably be called something else by now =p) now combines all features from Static Quality, Static Quality SR and Mad Skills (all variants), as well as the features mentioned above and can be configured "on the fly" via the Mod Options panel.
+
+No longer Requires: CCL (thanks to Killface)
+
+---------------------
+Changelog for A15.1.1:
+
+Added an option to enable 24h plant growth similar to ED-24HPlants mod which is currently broken due to CCL dependency.
+
+---------------------
+Changelog for A15.1:
+
+Changed version naming to be more coherent with Rimworld version. Implemented Killface's modifications to remove CCL depencency.
+
+---------------------
+Changelog for 1.3.2:
+
+Added, new switch that can turn off level loss due to skill degradation
+
+Cleanup, some code lines that didn't make sense in the original
+
+Known issues: daily xp cap switch doesn't really work as expected
+
+---------------------
+	
+Changelog for 1.3.1:
+Customization madness!
+
+Added, radio buttons (finally figured those out! =p) for skill and item quality options.
+
+Added, additional skill degradation options. You can now choose between vanilla skill degradation, halved skill degradation, "mild" degradation (the amout of xp lost is no longer level dependent) and no degradation.
+
+Added, a quality setting to revert to vanilla values (in case someone wants the other features of this mod but not the static quality part)
+
+---------------------
+
+Changelog for 1.3:
+Added a passion for passion ;) And also some cosmetic/configuration tweaks
+
+Modified, Passion Tweak/Learning Saturation: Modified values now also show up properly when mousing over the skills in the charater sheet.
+
+Added, Passion gain: Pawns can now gain passion when they level up a skill. The chance increases with level, e.g. Level 0 => Level 1 == 10%, Level 1 => Level 2 => 20% and so on. At 10 and above the chance is 100%.
+
+Added, Passion cap: To balance out the Passion gain feature, you can now turn on passion caps, so each time a Pawn gets a passion point and has more than 4 passions, a random skills passion will be lowered by one.
+
+Modified, Mod Options Panel: Grouped related items and made sure the settings are also saved properly.
+
+---------------------
+
+Changelog for 1.2:
+
+Modified, Static Quality: Added an additional checkbox that allows you to set the quality spread to +/- 2, WARNING: Since i haven't figured out how to do radio buttons in CCL yet, you need to check BOTH +/- 1 and +/- 2 to actually get the proper spread.
+
+Added, Passion Tweak: Enabling this changes the passion XP modifier to 1, 1.25, 1.50 (from 0.33, 1, 1.5), but retains the original joy gained from working.
+
+Added, Level dependent Learning Saturation: Enabling this, changes the 4k daily XP cap to a level dependent value (level * 500 + 1000. E.g. Level 0 => 1000 xp cap, Level 1 => 1500 xp cap and so on).
+
+---------------------
+
+Default Settings are:
+
+- skill_switch is set to NO DEGRADING
+- quality_switch is set to STATIC QUALITY
+- no level loss is OFF
+- Level dependent Learning Saturation is OFF
+- Passion Tweak is OFF
+- Passion gain is OFF
+- Passion cap is OFF
+
+Item creation quality Table:
+
+Skill Level Range:Resulting Item Quality
+0-2 Awful
+3-5 Shoddy
+6-8 Poor
+9-10 Normal
+11-12 Good
+13-14 Superior
+15-16 Excellent
+17-19 Masterwork
+20-20 Legendary
+
+Items can be +/- 1 of above table (if Quality spread option is enabled) e.g. 0-2 skill has a 2/3 chance of being awful, and 1/3 of being shoddy, 17-19 => 1/3 excellent, 1/3 masterwork, 1/3 legendary, 20 => 1/3 masterwork 2/3 legendary.
+
+Items can also be +/- 2 of above quality level, if both options are checked.
+
+WARNING: Be aware that running the MadSkills Mod in parallel will actually cause characters to gain experience, rather that lose it, when not using the skill =p (Since RT used a different approach than i did with circumventing the skill degradation).
+
+
+	</description>
+</ModMetaData>
