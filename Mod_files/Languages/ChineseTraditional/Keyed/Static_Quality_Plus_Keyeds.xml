@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SQP_Item_quality_options>物品品質選項：</SQP_Item_quality_options>
+  
+  <SQP_Vanilla_quality>原版品質</SQP_Vanilla_quality>
+  <SQP_Static_quality>穩定品質</SQP_Static_quality>
+  <SQP_Static_quality_variability_1>穩定品質 ±1</SQP_Static_quality_variability_1>
+  <SQP_Static_quality_variability_2>穩定品質 ±2</SQP_Static_quality_variability_2>
+  
+  <SQP_Skill_options>技能選項：</SQP_Skill_options>
+  
+  <SQP_Vanilla_degrading>原版经验减退</SQP_Vanilla_degrading>
+  <SQP_Halved_degrading>半速經驗減退</SQP_Halved_degrading>
+  <SQP_Mild_degrading>輕微經驗減退</SQP_Mild_degrading>
+  <SQP_No_degrading>經驗不減退</SQP_No_degrading>
+  
+  <SQP_No_skill_de_levelling>技能不降級</SQP_No_skill_de_levelling>
+  <SQP_No_skill_de_levelling_Description>技能會因經驗減退而降級。</SQP_No_skill_de_levelling_Description>
+  
+  <SQP_Daily_xp_cap_level_based>每日經驗上限基準</SQP_Daily_xp_cap_level_based>
+  <SQP_Daily_xp_cap_level_based_Description>學習飽和值不再是每日4千，替換為 等級數×500 +1000。</SQP_Daily_xp_cap_level_based_Description>
+
+  <SQP_Passion_options>熱情度選項</SQP_Passion_options>
+  
+  <SQP_Passion_tweak_enabled>熱情度微調</SQP_Passion_tweak_enabled>
+  <SQP_Passion_tweak_enabled_Description>不同熱情度的學習速度由原版的33%、100%和150%調整為100%、125%和150%。</SQP_Passion_tweak_enabled_Description>
+  <SQP_Passion_gain_enabled>熱情度獲取</SQP_Passion_gain_enabled>
+  <SQP_Passion_gain_enabled_Description>當殖民者技能升級時，有一定幾率獲取對技能的熱情度。</SQP_Passion_gain_enabled_Description>
+  <SQP_Passion_cap_enabled>熱情度限額</SQP_Passion_cap_enabled>
+  <SQP_Passion_cap_enabled_Description>殖民者最多對4種技能保持熱情，當某個獲取某種技能的熱情度時會隨機對另一個技能降低熱情度。</SQP_Passion_cap_enabled_Description>
+  
+  <SQP_Miscellanenous_options>綜合選項：</SQP_Miscellanenous_options>
+  
+  <SQP_Plant_resting_enabled>植物休眠</SQP_Plant_resting_enabled>
+  <SQP_Plant_resting_enabled_Description>禁止休眠後，植物可24小時生長。</SQP_Plant_resting_enabled_Description>
+
+</LanguageData>

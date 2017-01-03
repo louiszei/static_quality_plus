@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SQP_Item_quality_options>Item quality options:</SQP_Item_quality_options>
+  
+  <SQP_Vanilla_quality>Vanilla quality</SQP_Vanilla_quality>
+  <SQP_Static_quality>Static quality</SQP_Static_quality>
+  <SQP_Static_quality_variability_1>Static quality +/- 1</SQP_Static_quality_variability_1>
+  <SQP_Static_quality_variability_2>Static quality +/- 2</SQP_Static_quality_variability_2>
+  
+  <SQP_Skill_options>Skill options:</SQP_Skill_options>
+  
+  <SQP_Vanilla_degrading>Vanilla degrading</SQP_Vanilla_degrading>
+  <SQP_Halved_degrading>Halved degrading</SQP_Halved_degrading>
+  <SQP_Mild_degrading>Mild degrading</SQP_Mild_degrading>
+  <SQP_No_degrading>No degrading</SQP_No_degrading>
+  
+  <SQP_No_skill_de_levelling>No skill de-levelling</SQP_No_skill_de_levelling>
+  <SQP_No_skill_de_levelling_Description>Skill levels can't decrease from skill degradation</SQP_No_skill_de_levelling_Description>
+  
+  <SQP_Daily_xp_cap_level_based>Daily xp cap level based</SQP_Daily_xp_cap_level_based>
+  <SQP_Daily_xp_cap_level_based_Description>Learning Saturation is no longer fixed at 4k per day and level*500 + 1000 instead</SQP_Daily_xp_cap_level_based_Description>
+
+  <SQP_Passion_options>Passion options:</SQP_Passion_options>
+  
+  <SQP_Passion_tweak_enabled>Passion tweak enabled</SQP_Passion_tweak_enabled>
+  <SQP_Passion_tweak_enabled_Description>Passion now modifies xp gain by 1, 1.25 and 1.5, instead of 0.33, 1 and 1.5</SQP_Passion_tweak_enabled_Description>
+  <SQP_Passion_gain_enabled>Passion gain enabled</SQP_Passion_gain_enabled>
+  <SQP_Passion_gain_enabled_Description>Levelling up gives a Pawn the chance to gain Passion for a skill</SQP_Passion_gain_enabled_Description>
+  <SQP_Passion_cap_enabled>Passion cap enabled</SQP_Passion_cap_enabled>
+  <SQP_Passion_cap_enabled_Description>A Pawn can have a maximum of 4 passionate skills, gaining passion in a skill will downgrade the passion on a random other skill</SQP_Passion_cap_enabled_Description>
+  
+  <SQP_Miscellanenous_options>Miscellanenous options:</SQP_Miscellanenous_options>
+  
+  <SQP_Plant_resting_enabled>Plant resting enabled</SQP_Plant_resting_enabled>
+  <SQP_Plant_resting_enabled_Description>If disabled, plants can grow 24 hours a day</SQP_Plant_resting_enabled_Description>
+
+</LanguageData>
